@@ -8,13 +8,13 @@ import "./Buyer.sol";
 
 contract AssetTracker
 {
-    //Participants
+    //Participants in Supplychain
     mapping (address => Manufacturer) public manufacturers;
     mapping (address => Shipper) public shippers;
     mapping (address => Dealer) public dealers;
     mapping (address => Buyer) public buyers;
     
-    //Asset 
+    //Asset mapping
     mapping (int => Asset) public assets;
     int public assetId ;
     
